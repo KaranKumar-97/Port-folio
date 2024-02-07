@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink, Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className='flex max-w-[80vw] h-16 m-auto justify-between '>
@@ -7,10 +7,18 @@ const Navigation = () => {
         Karan
       </div>
       <div className='flex gap-10 '>
-        <button className='hover:border-b-4'>Home</button>
-        <button className='hover:border-b-4'>About</button>
-        <button className='hover:border-b-4'>Projects</button>
-        <button className='hover:border-b-4'>Resume</button>
+        <button ><NavLink to="/">
+                  Home
+                </NavLink></button>
+        <button ><NavLink to="/about">
+                  About
+                </NavLink></button>
+        <button ><NavLink to="/project">
+                  Projects
+                </NavLink></button>
+        <button ><NavLink to="/resume">
+                  Resume
+                </NavLink></button>
 
       </div>
     </div>
